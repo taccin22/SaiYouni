@@ -25,6 +25,7 @@ public class HealthRandom : MonoBehaviour
     //----------------------Edit below here --------------------
     public void RandomHealth()
     {
-
+        int randomHealth = Random.Range(minHealth, maxHealth + 1);
+        slider.value = randomHealth;
     }
 }

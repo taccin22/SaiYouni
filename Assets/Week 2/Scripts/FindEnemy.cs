@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class FindEnemy : MonoBehaviour
 {
+    public List<Enemy> enemies;
     //----------------------Edit below here --------------------
     public Enemy FindEnemyWithSmallestHealth()
     {
-        return null;
+        Enemy enemySmallestHealth = enemies[0];
+        foreach (Enemy enemy in enemies)
+        {
+            if (enemy.Health < enemySmallestHealth.Health)
+            {
+                enemySmallestHealth = enemy;
+            }
+        }
+        return enemySmallestHealth;
     }
 
     public Enemy FindEnemyWithLargestHealth()
     {
-        return null;
+        Enemy enemyLargestHealth = enemies[0];
+        foreach (Enemy enemy in enemies)
+        {
+            if (enemy.Health > enemyLargestHealth.Health)
+            {
+                enemyLargestHealth = enemy;
+            }
+        }
+        return enemyLargestHealth;
     }
 
     //----------------------Edit above here --------------------
