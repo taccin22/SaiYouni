@@ -6567,7 +6567,7 @@ MonoBehaviour:
   currentPointIndex: 0
   currentPoint: {fileID: 0}
   pointDistance: Infinity
-  pointDistanceLimit: 1
+  pointDistanceLimit: 2
   isFinish: 0
   targetToMove: {fileID: 0}
 --- !u!1001 &1975397520
